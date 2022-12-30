@@ -39,3 +39,18 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## ページの追加方法
+
+いくつか方法がある。
+
+* `src/pages` 配下に追加する方法
+* `blog` 配下に追加する方法 
+* `docs` 配下に追加する方法 
+
+|ディレクトリ|説明|
+|-|-|
+|src/pages|通常の Web サイトのようなページを作成する場合はこちらに作成する。主にルートページ（/）を配置するときに使う。React や Markdown、mdx を活用して追加ができる。<br>https://docusaurus-i18n-staging.netlify.app/ja/docs/creating-pages|
+|docs|ドキュメントを配置することを目的にしたディレクトリ。デフォルトだと URL は /docs 配下となるが、 / に変更もできる。Markdown、mdx に対応。<br>https://docusaurus-i18n-staging.netlify.app/ja/docs/docs-introduction|
+|blog|ブログの投稿を目的にしたディレクトリ。Markdown、mdx に対応。<br>https://docusaurus.io/docs/blog|
+|static|主に画像はこちらに格納する。| 
